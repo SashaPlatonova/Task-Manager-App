@@ -1,0 +1,7 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/titles"
+        android:title="Title(A-Z)" />
+    <item android:id="@+id/dueDates"
+        android:title="Due Date(closest)"
+        />
+</menu>

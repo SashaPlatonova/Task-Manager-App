@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Task Title"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Description"
+                android:inputType="textMultiLine"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tvDueDateValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Date"
+            android:textSize="14sp"
+            android:textColor="#007AFF"
+            android:padding="6dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/status_pending"/>
+
+        <DatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:calendarViewShown="true"
+            android:layout_marginTop="6dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            />
+
+        <Switch
+            android:id="@+id/switchCompleted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mark as Completed?"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <Button
+            android:id="@+id/btnSaveTask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Task"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#00CCFF"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+
+</ScrollView>

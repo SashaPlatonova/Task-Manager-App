@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.MainActivity"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    >
+
+    <LinearLayout
+        android:id="@+id/linearLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        >
+
+        <EditText
+            android:id="@+id/searchByTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:hint="Search by title"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="#BEF2FD">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Filter by"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:padding="8dp" />
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/task_item"
+        android:layout_below="@+id/linearLay"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="24dp"
+        android:src="@drawable/add_note_svgrepo_com"
+        />
+
+
+</RelativeLayout>
