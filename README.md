@@ -77,8 +77,8 @@ This app allows users to **create**, **edit**, **delete**,**show**, and view tas
 
 | Task List | Add/Edit Task | Show Task |
 |:--:|:--:|:--:|
-|<img width="300" height="2992" alt="Screenshot_20251114_012711" src="https://github.com/user-attachments/assets/31955188-e1f2-4e5a-b6e4-57726e065e92" />
-|<img width="300" height="2992" alt="Screenshot_20251114_013831" src="https://github.com/user-attachments/assets/3e98723f-22fb-4b19-8f47-71860ddfc42b" />
+|<img width="300" height="2992" alt="Screenshot_20251114_012711" src="https://github.com/user-attachments/assets/31955188-e1f2-4e5a-b6e4-57726e065e92" />|
+|<img width="300" height="2992" alt="Screenshot_20251114_013831" src="https://github.com/user-attachments/assets/3e98723f-22fb-4b19-8f47-71860ddfc42b" />|
 |<img width="300" height="2992" alt="Screenshot_20251114_013259" src="https://github.com/user-attachments/assets/a722b0e3-d177-4115-a04c-7566273be904" />|
 ---
 
