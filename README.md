@@ -15,7 +15,11 @@ This app allows users to create, edit, delete, and view tasks with due dates, st
 - **Sort Tasks** – Sort tasks by Title (A-Z / Z-A) or Due Date (Closest / Overdue).
 - **Encrypted Storage** – Task title and description are encrypted using AES.
 - **Room Database** – All tasks are stored locally with Room.
-- **Task Details** – View task details in a dedicated screen with status highlighting.
+- **Task Details Screen** – View task details in a dedicated screen.
+- **Status Bar** – Each task shows a colored status bar:
+  - **Pending** – Task is due but not yet completed
+  - **Completed** – Task is completed
+  - **Expired** – Task due date has passed
 
 ---
 
@@ -24,7 +28,7 @@ This app allows users to create, edit, delete, and view tasks with due dates, st
 <!-- Replace these placeholders with your own screenshots -->
 ![Main Screen](screenshots/main_screen.png)
 ![Add Task](screenshots/add_task.png)
-![Task Details](screenshots/task_details.png)
+![Task Details with Status](screenshots/task_status.png)
 
 ---
 
