@@ -1,47 +1,97 @@
-# Task Manager App
+# 🗂️ Task Manager App
 
 A simple Android Task Manager application built with **Kotlin** and **Room Database**.  
-This app allows users to create, edit, delete, and view tasks with due dates, status, and encrypted storage for sensitive data.
+This app allows users to **create**, **edit**, **delete**,**show**, and view tasks with due dates,user can filter by title(A-Z)/(Z-A) and dueDate(Cloest)/(Overdue) ,status, and encrypted storage for sensitive data. 
 
 ---
 
 ## 🚀 Features
 
-- **Add Tasks** – Create new tasks with title, description, due date, and status.
-- **Edit Tasks** – Update existing tasks easily.
-- **Delete Tasks** – Remove tasks with a confirmation dialog.
-- **Mark as Completed** – Toggle task status between Pending, Completed, and Expired.
-- **Search Tasks** – Quickly search tasks by title.
-- **Sort Tasks** – Sort tasks by Title (A-Z / Z-A) or Due Date (Closest / Overdue).
-- **Encrypted Storage** – Task title and description are encrypted using AES.
-- **Room Database** – All tasks are stored locally with Room.
-- **Task Details Screen** – View task details in a dedicated screen.
-- **Status Bar** – Each task shows a colored status bar:
+✅ **Add Tasks** – Create new tasks with title, description, due date, and completion status  
+✅ **Edit Tasks** – Update existing tasks easily with pre-filled data  
+✅ **Delete Tasks** – Remove tasks with a confirmation dialog. 
+✅ **Room Database** – All tasks are stored locally with Room.  
+✅ **Mark as Completed** – Toggle task status between Pending, Completed, and Expired. 
+✅ **Search Tasks** – Quickly search tasks by title.
+✅ *Sort Tasks** – Sort tasks by Title (A-Z / Z-A) or Due Date (Closest / Overdue).
+✅ **Encrypted Storage** – Task title and description are encrypted using AES. 
+✅ **Task Details Screen** – View task details in a dedicated screen.
+✅ **Status Bar** – Each task shows a colored status bar:
   - **Pending** – Task is due but not yet completed
   - **Completed** – Task is completed
-  - **Expired** – Task due date has passed
+  - **Expired** – Task due date has passed 
+✅ Simple and modern user interface 
 
 ---
 
-## 📸 Screenshots
+## 🧱 Tech Stack
 
-<!-- Replace these placeholders with your own screenshots -->
-![Main Screen](screenshots/main_screen.png)
-![Add Task](screenshots/add_task.png)
-![Task Details with Status](screenshots/task_status.png)
+| Component          | Technology Used                   |
+|-------------------|------------------------------------|
+| Language           | Kotlin                            |
+| Database           | Room (Local Storage)              |
+| UI                 | RecyclerView, Material Design     |
+| Architecture       | MVVM (basic structure)            |
+| Async Operations   | Coroutines + LiveData             |
+| Encryption         | AES (Advanced Encryption Standard)|
+| Adapter/Binding    | ViewBinding, RecyclerView Adapter |
+| Android Version    | API 24+ (Android 7.0 and above)   |
 
----
-
-## 🛠 Technologies Used
-
-- **Kotlin** – Programming language
-- **Android SDK** – UI and Activity management
-- **Room Database** – Local database for tasks
-- **RecyclerView** – Display task list
-- **ViewBinding** – Safe UI references
-- **AES Encryption** – Secure storage of task titles and descriptions
 
 ---
 
-## 📂 Project Structure
+## 📲 Screens Included
 
+1. **MainActivity** – Displays all saved tasks in a RecyclerView with search, sort, and status indicators (Pending, Completed, Expired). Users can edit or delete tasks from     this screen.  
+2. **Add_Task Activity** – Add a new task or edit an existing one with title, description, due date (via DatePicker), and completion status. Validates inputs before saving. 
+3. **Show_Task_Data Activity** – View full task details including title, description, due date, and status with a colored status bar.  
+4. **TaskAdapter** – RecyclerView Adapter handling UI binding, click listeners for edit/delete, status toggle, and launching the detail view.
+
+
+---
+
+## 🗃️ Database Design
+
+**Entity:** `Task_Data`  
+
+| Field        | Type           | Description                        |
+|--------------|----------------|------------------------------------|
+| id           | Int (Auto-generated) | Primary key                        |
+| title        | String         | Task title (encrypted in DB)       |
+| description  | String         | Task details (encrypted in DB)     |
+| dueDate      | String         | Due date stored as timestamp (millis) |
+| isCompleted  | Boolean        | Task completion status             |
+
+
+---
+
+## 📦 How to Run
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/ar-sarkar-77/Task-Manager-App.git
+
+---
+
+## 🖼️ Screenshots 
+
+| Task List | Add/Edit Task |
+|:--:|:--:|
+| <img src="https://github.com/user-attachments/assets/8e1b8e54-4a93-4fa4-93fa-5aa5e3985505" width="250"/> | <img src="https://github.com/user-attachments/assets/fa8b2c44-5a35-4726-8e44-3e187538a157" width="250"/> |
+
+
+---
+
+## 👨‍💻 Author
+
+👤 Mohammad Anondo Sarkar
+
+💼 Android App Developer | UI UX Designer | 💻 Computer Science Student
+
+📧 Email: anondosarkarar77@gmail.com
+
+🌍 From: Lalmonirhat, Bangladesh
+
+🌐 Website: https://arsarkar77.blogspot.com/
+
+💬 Built with ❤️, Kotlin, and endless cups of coffee ☕
