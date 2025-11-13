@@ -9,18 +9,18 @@ This app allows users to **create**, **edit**, **delete**,**show**, and view tas
 
 ✅ **Add Tasks** – Create new tasks with title, description, due date, and completion status  
 ✅ **Edit Tasks** – Update existing tasks easily with pre-filled data  
-✅ **Delete Tasks** – Remove tasks with a confirmation dialog. 
-✅ **Room Database** – All tasks are stored locally with Room.  
-✅ **Mark as Completed** – Toggle task status between Pending, Completed, and Expired. 
-✅ **Search Tasks** – Quickly search tasks by title.
-✅ *Sort Tasks** – Sort tasks by Title (A-Z / Z-A) or Due Date (Closest / Overdue).
-✅ **Encrypted Storage** – Task title and description are encrypted using AES. 
-✅ **Task Details Screen** – View task details in a dedicated screen.
-✅ **Status Bar** – Each task shows a colored status bar:
-  - **Pending** – Task is due but not yet completed
-  - **Completed** – Task is completed
-  - **Expired** – Task due date has passed 
-✅ Simple and modern user interface 
+✅ **Delete Tasks** – Remove tasks with a confirmation dialog  
+✅ **Room Database** – All tasks are stored locally with Room   
+✅ **Mark as Completed** – Toggle task status between Pending, Completed, and Expired  
+✅ **Search Tasks** – Quickly search tasks by title  
+✅ *Sort Tasks** – Sort tasks by Title (A-Z / Z-A) or Due Date (Closest / Overdue)  
+✅ **Encrypted Storage** – Task title and description are encrypted using AES  
+✅ **Task Details Screen** – View task details in a dedicated screen  
+✅ Simple and modern user interface  
+✅ **Status Bar** – Each task shows a colored status bar:  
+  - **Pending** – Task is due but not yet completed  
+  - **Completed** – Task is completed  
+  - **Expired** – Task due date has passed   
 
 ---
 
@@ -77,21 +77,15 @@ This app allows users to **create**, **edit**, **delete**,**show**, and view tas
 
 | Task List | Add/Edit Task | Show Task |
 |:--:|:--:|:--:|
-| <img src="https://github.com/ar-sarkar-77/Task-Manager-App/raw/main/screenshots/main_screen.png" width="250"/> | <img src="https://github.com/ar-sarkar-77/Task-Manager-App/raw/main/screenshots/add_task.png" width="250"/> | <img src="https://github.com/ar-sarkar-77/Task-Manager-App/raw/main/screenshots/show_task.png" width="250"/> |
-
-
+| <img width="300" height="2992" alt="Screenshot_20251114_012711" src="https://github.com/user-attachments/assets/31955188-e1f2-4e5a-b6e4-57726e065e92" />|<img width="300" height="2992" alt="Screenshot_20251114_013831" src="https://github.com/user-attachments/assets/3e98723f-22fb-4b19-8f47-71860ddfc42b" />| <img width="300" height="2992" alt="Screenshot_20251114_013259" src="https://github.com/user-attachments/assets/a722b0e3-d177-4115-a04c-7566273be904" />|
 ---
 
 ## 👨‍💻 Author
+---
 
-👤 Mohammad Anondo Sarkar
-
-💼 Android App Developer | UI UX Designer | 💻 Computer Science Student
-
-📧 Email: anondosarkarar77@gmail.com
-
-🌍 From: Lalmonirhat, Bangladesh
-
-🌐 Website: https://arsarkar77.blogspot.com/
-
-💬 Built with ❤️, Kotlin, and endless cups of coffee ☕
+## 👤 Mohammad Anondo Sarkar  
+💼 Android App Developer | UI UX Designer | 💻 Computer Science Student  
+📧 Email: anondosarkarar77@gmail.com  
+🌍 From: Lalmonirhat, Bangladesh  
+🌐 Website: https://arsarkar77.blogspot.com  
+💬 Built with ❤️, Kotlin, and endless cups of coffee ☕  
