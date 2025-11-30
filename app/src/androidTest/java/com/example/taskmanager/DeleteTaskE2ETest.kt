@@ -27,13 +27,11 @@ class DeleteTaskE2ETest {
 
     @Test
     fun deleteTask_success() {
-        // Создаём задачу
         onView(withId(R.id.add_task)).perform(click())
         onView(withId(R.id.etTitle)).perform(typeText("Test task"), closeSoftKeyboard())
         onView(withId(R.id.etDescription)).perform(typeText("Some description"), closeSoftKeyboard())
         onView(withId(R.id.btnSaveTask)).perform(click())
 
-        // Удаляем через RecyclerView
         onView(withId(R.id.recyclerView))
             .perform(
                 actionOnItem<RecyclerView.ViewHolder>(
@@ -42,7 +40,6 @@ class DeleteTaskE2ETest {
                 )
             )
 
-        // Проверяем, что задачи больше нет
         onView(withText("Test task")).check(doesNotExist())
     }
 

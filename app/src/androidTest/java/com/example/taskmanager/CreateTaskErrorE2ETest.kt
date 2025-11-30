@@ -31,7 +31,6 @@ class CreateTaskErrorE2ETest {
     }
 }
 
-// Top-level helper: avoids inline object issues and ensures correct typing
 fun hasErrorText(expectedError: String): Matcher<View> {
     return object : TypeSafeMatcher<View>() {
         override fun matchesSafely(view: View): Boolean {
